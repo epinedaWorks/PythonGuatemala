@@ -54,6 +54,24 @@ h1, h2 {
     border-radius: 5px;
 }
 
+#logo {
+    display: flex;              /* Habilita Flexbox */
+    flex-direction: column;     /* Coloca los elementos en columna */
+    justify-content: center;    /* Centra verticalmente */
+    align-items: center;        /* Centra horizontalmente */
+    height: 100vh;              /* Ocupe toda la altura de la pantalla */
+}
+
+#logo h2 {
+    margin: 0 0 20px 0;         /* Espacio debajo del título */
+}
+
+.logo {
+    max-width: 100%;            /* Evita que la imagen sea más grande que el contenedor */
+    height: auto;               /* Mantiene la proporción de la imagen */
+}
+
+
 .social-links a:hover {
     background-color: #555;
 }
