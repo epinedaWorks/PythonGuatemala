@@ -16,6 +16,8 @@ window.onscroll = function() {
     }
 };
 
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+
 // Inicializar EmailJS (reemplace 'YOUR_USER_ID' con su User ID)
 emailjs.init('RO81h33TUhbyarOAS');
 
