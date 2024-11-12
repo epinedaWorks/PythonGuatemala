@@ -73,3 +73,40 @@ h1, h2 {
 #backToTop:hover {
     background-color: #555;
 }
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+#contacto label {
+    font-weight: bold;
+}
+
+#contacto input, #contacto textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contacto button {
+    padding: 10px;
+    background-color: #3776ab;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contacto button:hover {
+    background-color: #555;
+}
+
+#statusMessage {
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+}

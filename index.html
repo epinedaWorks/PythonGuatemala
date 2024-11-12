@@ -16,6 +16,7 @@
             <li><a href="#codigo-conducta">Código de Conducta</a></li>
             <li><a href="#logo">Logo</a></li>
             <li><a href="#redes">Redes Sociales</a></li>
+			<li><a href="#contacto">Contáctanos</a></li>
         </ul>
     </nav>
 
@@ -23,6 +24,14 @@
     <section id="bienvenida">
         <h1>Bienvenidos a la Comunidad Python Guatemala</h1>
         <p>Esta es una comunidad dedicada a promover el uso de Python en Guatemala.</p>
+		<p> Ya seas principiante o un desarrollador de Python experimentado, este grupo es para cualquier persona interesada en aprender, compartir y explorar el mundo de la programación en Python. 
+		Nuestro objetivo es proporcionar un entorno amigable e inclusivo para que las personas colaboren, establezcan redes y desarrollen sus habilidades en Python. 
+		Únete a nosotros para talleres prácticos, desafíos de codificación, charlas técnicas y más. 
+		¡Unámonos para construir una comunidad Python fuerte en Guatemala! Hablemos sobre Python, compartamos nuestro conocimiento y divirtámonos codificando juntos. 
+		¡Todos los niveles de habilidad son bienvenidos!
+</p>
+		
+		
     </section>
 
     <!-- Sección 2: Objetivos -->
@@ -39,26 +48,20 @@
     <section id="codigo-conducta">
         <h2>Código de Conducta</h2>
         <p>Todos los miembros deben tratarse con respeto y cordialidad. No se tolera ningún tipo de discriminación.</p>
-		<p>Nuestra comunidad
-Las personas afiliadas a la comunidad Python son inclusivas, consideradas y respetuosas. Los comportamientos que refuerzan estos valores contribuyen a un ambiente positivo e incluyen:
-
-Ser inclusivo (being open). Las personas afiliadas de la comunidad están abiertas a la colaboración, ya sea en PEPs, parches, problemas y otros.
-
-Centrarse en lo que es mejor para la comunidad. Somos personas respetuosas de los procesos establecidos en la comunidad y trabajamos dentro de ellas.
-
-Reconociendo tiempo y esfuerzo. Somos personas respetuosas de los esfuerzos de las personas voluntarias que impregnan la comunidad de Python. Somos personas atentas al abordar los esfuerzos de los demás, teniendo en cuenta que muchas veces la labor se completó simplemente por el bien de la comunidad.
-
-Ser respetuoso de los diferentes puntos de vista y experiencias. Somos personas receptivas a los comentarios constructivos y las críticas, ya que las experiencias y habilidades de otras personas afiliadas contribuyen a la totalidad de nuestros esfuerzos.
-
-Mostrando empatía hacia otras personas afiliads de la comunidad. Estamos atentos en nuestras comunicaciones, ya sea en persona o en línea, y tenemos tacto cuando nos acercamos a diferentes puntos de vista.
-
-Ser considerado. Las personas afiliadas a la comunidad son consideradas con sus pares, otras personas usuarias de Python.
-
-Ser respetuoso. Somos personas respetuosas con los demás, sus posiciones, sus habilidades, sus compromisos y sus esfuerzos.
-
-Aceptando con gracia las críticas constructivas. Cuando no estamos de acuerdo, somos corteses al plantear nuestros problemas.
-
-Uso de un lenguaje acogedor e inclusivo. Estamos aceptando a todas las personas que deseen participar en nuestras actividades, fomentando un entorno en el que cualquiera pueda participar y todas las personas puedan marcar la diferencia.</p>
+		<h3>Código de Conducta</h3>
+		<p>Las personas afiliadas a la comunidad Python son inclusivas, consideradas y respetuosas. 
+		Los comportamientos que refuerzan estos valores contribuyen a un ambiente positivo e incluyen:</p>
+		<ul>
+			<li>Ser inclusivo (being open). Las personas afiliadas de la comunidad están abiertas a la colaboración, ya sea en PEPs, parches, problemas y otros.</li>
+			<li>Centrarse en lo que es mejor para la comunidad. Somos personas respetuosas de los procesos establecidos en la comunidad y trabajamos dentro de ellas.</li>
+			<li>Reconociendo tiempo y esfuerzo. Somos personas respetuosas de los esfuerzos de las personas voluntarias que impregnan la comunidad de Python. Somos personas atentas al abordar los esfuerzos de los demás, teniendo en cuenta que muchas veces la labor se completó simplemente por el bien de la comunidad.</li>
+			<li>Ser respetuoso de los diferentes puntos de vista y experiencias. Somos personas receptivas a los comentarios constructivos y las críticas, ya que las experiencias y habilidades de otras personas afiliadas contribuyen a la totalidad de nuestros esfuerzos.</li>
+			<li>Mostrando empatía hacia otras personas afiliads de la comunidad. Estamos atentos en nuestras comunicaciones, ya sea en persona o en línea, y tenemos tacto cuando nos acercamos a diferentes puntos de vista.</li>
+			<li>Ser considerado. Las personas afiliadas a la comunidad son consideradas con sus pares, otras personas usuarias de Python.</li>
+			<li>Ser respetuoso. Somos personas respetuosas con los demás, sus posiciones, sus habilidades, sus compromisos y sus esfuerzos.</li>
+			<li>Aceptando con gracia las críticas constructivas. Cuando no estamos de acuerdo, somos corteses al plantear nuestros problemas.</li>
+			<li>Uso de un lenguaje acogedor e inclusivo. Estamos aceptando a todas las personas que deseen participar en nuestras actividades, fomentando un entorno en el que cualquiera pueda participar y todas las personas puedan marcar la diferencia.</li>
+		</ul>
     </section>
 
     <!-- Sección 4: Logo -->
@@ -76,6 +79,26 @@ Uso de un lenguaje acogedor e inclusivo. Estamos aceptando a todas las personas 
             <a href="https://github.com/PythonGuatemala" target="_blank">GitHub</a>
         </div>
     </section>
+
+	<!-- Sección 6: Contacto -->
+	<section id="contacto">
+		<h2>Contacto</h2>
+		<form id="contactForm">
+			<label for="name">Nombre:</label>
+			<input type="text" id="name" name="user_name" required>
+
+			<label for="email">Correo Electrónico:</label>
+			<input type="email" id="email" name="user_email" required>
+
+			<label for="message">Mensaje:</label>
+			<textarea id="message" name="user_message" rows="4" required></textarea>
+
+			<button type="submit">Enviar</button>
+		</form>
+		<p id="statusMessage"></p>
+	</section>
+
+
 
     <!-- Botón para volver arriba -->
     <button id="backToTop" onclick="scrollToTop()">Volver arriba</button>
