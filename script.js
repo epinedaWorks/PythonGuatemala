@@ -1,10 +1,3 @@
-
-import emailjs from '@emailjs/browser';
-
-//import emailjs from 'emailjs-com';
-//<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-
-
 // Función para desplazar hacia arriba
 function scrollToTop() {
     window.scrollTo({
