@@ -17,23 +17,38 @@ window.onscroll = function() {
 };
 
 // Inicializar EmailJS (reemplace 'YOUR_USER_ID' con su User ID)
-emailjs.init('aYItPsEdpLFK12-IL');
+emailjs.init('RO81h33TUhbyarOAS');
 
-// Manejar el envío del formulario
 document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevenir el envío del formulario por defecto
-
-    const statusMessage = document.getElementById('statusMessage');
+    event.preventDefault(); // Prevenir el envío por defecto
 
     // Enviar el formulario utilizando EmailJS
     emailjs.sendForm('service_qphkm8d', 'plantillaContacto', '#contactForm')
         .then(() => {
-            statusMessage.textContent = '¡Mensaje enviado exitosamente!';
-            statusMessage.style.color = 'green';
-            document.getElementById('contactForm').reset(); // Limpiar el formulario
+            // Mostrar la notificación de éxito
+            showNotification();
+            document.getElementById('contactForm').reset();
         }, (error) => {
-            statusMessage.textContent = 'Error al enviar el mensaje. Inténtelo de nuevo.';
-            statusMessage.style.color = 'red';
+            alert('Error al enviar el mensaje. Inténtelo de nuevo.');
             console.error('Error:', error);
         });
 });
+
+// Mostrar la notificación
+function showNotification() {
+    const notification = document.getElementById('notification');
+    notification.classList.add('show');
+    notification.classList.remove('hidden');
+    
+    // Ocultar la notificación automáticamente después de 5 segundos
+    setTimeout(() => {
+        closeNotification();
+    }, 5000);
+}
+
+// Cerrar la notificación manualmente
+function closeNotification() {
+    const notification = document.getElementById('notification');
+    notification.classList.add('hidden');
+    notification.classList.remove('show');
+}

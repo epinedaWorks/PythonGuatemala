@@ -1,19 +1,14 @@
-<h2>¡Nuevo mensaje de la Comunidad Python Guatemala!</h2>
-
-<p> <strong>Nombre:</strong> ${user_name} 
-<br><strong>Correo: <strong>(<a href="mailto:${user_email}">${user_email}</a>)</p>
-
+<h2>&iexcl;Nuevo mensaje de la Comunidad Python Guatemala!</h2>
+<p><strong>Nombre:</strong> {{user_name}}&nbsp;</p>
+<p><strong>Correo:</strong> {{user_email}}&nbsp;</p>
 <p><strong>Mensaje:</strong></p>
-<p>${user_message}</p>
-
-<hr>
+<p>{{user_message}}</p>
 <p>Gracias por ponerse en contacto con la Comunidad Python Guatemala.</p>
 <p>Nos pondremos en contacto con usted lo antes posible.</p>
-
 <footer>
-    <p>Síganos en nuestras redes sociales:</p>
-    <ul>
-        <li><a href="https://www.facebook.com/share/14wrWThjho/">Facebook</a></li>
-        <li><a href="https://www.instagram.com/pythonguatemala/profilecard/?igsh=MTk4NXVyZXp3MGFwYQ==">Instagram</a></li>
-    </ul>
+<p>S&iacute;ganos en nuestras redes sociales:</p>
+<ul>
+<li><a href="https://www.facebook.com/share/14wrWThjho/">Facebook</a></li>
+<li><a href="https://www.instagram.com/pythonguatemala/profilecard/?igsh=MTk4NXVyZXp3MGFwYQ==">Instagram</a></li>
+</ul>
 </footer>
